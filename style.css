@@ -1,0 +1,351 @@
+* {box-sizing: border-box;}
+
+body {font-family: Georgia, 'Times New Roman', Times, Arial, Helvetica, sans-serif, serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+
+.box1 {background-color: #1f2937;
+    color: #ffff;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    padding-left: 100px;   
+    padding-right: 100px;
+}
+
+.logo {display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70px ;
+    width: 140px;
+}
+.logo img {width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box1 ul {display: flex;
+    justify-content:center;
+    list-style-type: none;
+    align-items: center;
+    margin-left: auto;
+
+}
+
+
+.box1 ul li a {padding:5px 25px;
+    font-size: 18px;
+    color: #e5e7eb;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #3882f6;
+}
+
+.box1 ul li a:hover {background-color: #3882f6;}
+
+
+
+
+.box2 {background-color: #1f2937;
+    display: flex;
+    flex: 1 1 auto;
+    color: white;
+    padding-left: 100px;   
+    padding-right: 100px;
+    height: 240px;
+}
+
+
+
+.intro {
+    width: 600px;
+    
+}
+.intro h3 {font-size: 48px;
+    color: #f9fafa;
+    padding-top: 10px;
+    margin: auto;
+}
+
+.intro a {background-color: #3882f6;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffff;
+    text-decoration: none;
+    border: 1px solid #3882f6;
+    border-radius: 10px;   
+}
+.intro a:hover {background-color: #1f2937;}
+
+
+.photodiv {
+    margin-left: auto;
+    height: 200px;
+    width: 450px;
+    margin-top: 15px;
+   
+}
+.photodiv img {width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box3 {background-color: #f9faf8;
+    margin: 0;
+    
+}
+
+.box3 h3 {text-align: center;
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.box3 p {text-align: center;
+    color: #1f2937;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 0;
+}
+
+
+
+.box3-section {display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
+
+.box3-photo { 
+    width: 300px;
+    height: 200px;
+
+
+}
+
+.box3-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+ 
+
+.box3-subbox p {font-size: 17px;
+    text-transform: inherit;
+    width: 300px;
+   
+}
+
+
+.box4 {display: flex;
+    flex-wrap: wrap;
+    background-color: #e5e7eb;
+ 
+}
+
+.quotes {width: 700px;
+    color: #1f2937;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    padding: 30px 0;
+    font-style: italic;
+    text-align: left;
+
+}
+.quotes h3 {text-align: right;}
+
+
+.box5 {background-color: #f9fafa;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+   
+   
+}
+
+.mid-box {background-color: #3882f6;
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end;
+    width: 800px;
+    margin: 20px auto;
+    border-radius: 15px;
+    
+}
+
+.midbox-contents h4 {
+    padding-top: 20px;
+    margin-bottom: 0;
+    color: #f9fafa;
+    font-size: 20px;
+    
+}
+
+.midbox-contents p {
+    color: #f9fafa;
+    font-size: 17px;
+    padding-top: 3px;
+    padding-bottom: 20px;
+    margin:0;
+}
+.sign-up {margin: 0;
+    padding: 0;
+}
+
+.sign-up ul li { list-style-type: none;
+    margin-left: 30px;
+  
+   
+
+}
+
+.sign-up ul li a { color: #f9fafa;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 30px;
+    padding: 7px 10px;
+    border: 1px solid #f9fafa;
+    border-radius: 10px;   
+
+}
+.sign-up ul a:hover {background-color: #1f2937;}
+
+
+.box6 {background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9fafa;
+}
+
+
+
+/* Responsive styling */
+
+
+@media all and (max-width: 780px) {
+    .box1 ul { display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .box1 ul li  {
+        border: 0;
+        margin-bottom: 5px;
+    }
+
+}
+
+
+@media all and (max-width: 1500px) {
+    .box2 { display: flex;
+        height: auto;
+        flex-wrap: wrap;
+
+    }
+
+    
+}
+
+@media all and (max-width: 600px) {
+    .photodiv { display: flex;
+        width: 225px;
+        height: 100px;
+      
+        
+    }
+    .photodiv img {width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media all and (max-width: 280px) {
+    .photodiv { display: flex;
+        width: 112.5px;
+        height: 50px;
+      
+        
+    }
+    .photodiv img {width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media all and (max-width: 800px) {
+    .quotes {display: flex;
+        padding: 10px 20px;
+        flex-flow: column wrap;
+        
+    }
+
+}
+
+@media all and (max-width: 800px) {
+    .mid-box {display: flex;
+        
+        padding: 10px 20px;
+        flex-flow: column wrap;
+    }
+
+}
+@media all and (max-width: 300px){
+
+    .box3-section {display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+.box3-subbox {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.box3-photo { 
+    width: 150px;
+    height: 100px;
+
+}
+.box3-subbox p {font-size: 17px;
+    width: auto;
+   
+}
+
+.box3 h3 {text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.box3 p {text-align: center;
+    font-size: 16px;
+    padding: 0;
+}
+
+
+}
